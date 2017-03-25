@@ -23,17 +23,17 @@ block comment
 
 ##通常没有必要删除全局变量，如果一个全局变量的生存周期比较短，那么应该使用局部变量
 
-## 在交互模式中，如要打印任何表达式的值，可以用等号开头，并跟随一个表达式
+##在交互模式中，如要打印任何表达式的值，可以用等号开头，并跟随一个表达式
 
-## Lua有8种基本类型 nil boolean number string userdata function thread table
+##Lua有8种基本类型 nil boolean number string userdata function thread table
 
-## type函数用于返回 类型
+##type函数用于返回 类型
 
-## false 和nil 被视为 假
+##false 和nil 被视为 假
 
-## Lua种 ..是字符串连接符号，两边必须有空格
+##Lua种 ..是字符串连接符号，两边必须有空格
 
-## tonumber tostring用于数字和字符类型之间的转换
+##tonumber tostring用于数字和字符类型之间的转换
 
-## 求长度操作符 \#
+##求长度操作符 \#
 
