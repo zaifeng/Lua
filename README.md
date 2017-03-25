@@ -35,3 +35,5 @@ block comment
 
 ## tonumber tostring用于数字和字符类型之间的转换
 
+## 求长度操作符 #
+
