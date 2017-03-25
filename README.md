@@ -37,3 +37,15 @@ block comment
 
 ##求长度操作符 \#
 
+##table如果含Hole，则长度以nil元素为结尾，最大索引通过table.maxn获取
+
+##table的字符键和数字键 是不重复的，定义table key的时候一定要慎重
+
+##Lua特有的不等号 ~=
+
+##x == x or v 等价于 if not x then x = v end
+
+##Lua没有三目表达式，但有替代 例如 max = (x > y) and x or y
+
+##table初始化T = {"Monday","Tuesday","Wedsday","Thursday","Friday","Saturday","Sunday"},也可以 T={x=1,y=2}
+
