@@ -57,5 +57,10 @@ block comment
 
 ##select(#, ...)返回所有变长参数的总和
 
+##loadstring在lua5.2中已弃用，修改为load
+
+##调用select时，必须传入一个固定实参selector(选择开关)和一系列变长参数。如果selector为数字n,那么select返回它的第n个可变实参，否则只能为字符串"#",这样select会返回变长参数的总数。
+
+##assert函数检查其第一个参数是否为true，若为true则简单地返回该参数，否则就引发一个错误
 
 
