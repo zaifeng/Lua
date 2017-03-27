@@ -41,3 +41,16 @@ coroutine.resume(co3)
 coroutine.resume(co3)
 coroutine.resume(co3)
 coroutine.resume(co3)
+
+-- coroutine.wrap方式创建协程
+-- 函数 coroutine.wrap 也是创建一个协程，但是它并不返回一个类型为 thread 的对象，而是返回一个函数
+function wrap(param)
+    print("Before yield",param)
+    obtain = coroutine.yield()
+    print("After yield",obtain)
+    return 3
+end
+resumer = coroutine.wrap(wrap)
+
+print(resumer(1))
+print(resumer(2))
