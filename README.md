@@ -49,3 +49,7 @@ block comment
 
 ##table初始化T = {"Monday","Tuesday","Wedsday","Thursday","Friday","Saturday","Sunday"},也可以 T={x=1,y=2}
 
+##Lua允许函数有多个返回值
+
+
+

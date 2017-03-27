@@ -1,7 +1,7 @@
 function add( a )
     -- body
     local sum = 0
-    for _, v in pairs(a) do
+    for _, v in ipairs(a) do
         sum = sum + v
     end
     return sum
