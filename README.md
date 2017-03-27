@@ -63,4 +63,6 @@ block comment
 
 ##assert函数检查其第一个参数是否为true，若为true则简单地返回该参数，否则就引发一个错误
 
+##unpack从Lua5.2开始 变成table.unpack,第二个参数为table的开始index
+
 
