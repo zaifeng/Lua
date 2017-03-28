@@ -1,3 +1,4 @@
+-- 计算一个数的阶乘
 function fact( n )
     -- body
     if n == 0 then
