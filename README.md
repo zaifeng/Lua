@@ -23,7 +23,7 @@ block comment
 block comment
 --]]
 
-后者便于调试，需要注意的是，*减号-*和*中括号[]*之间不能有空格
+后者便于调试，需要注意的是，**减号\-**和**中括号[]**之间不能有空格
 
 ##Lua中访问一个未初始化的变量不会报错，访问结果是返回一个nil
 
@@ -37,7 +37,7 @@ block comment
 
 ##false 和nil 被视为 假
 
-##Lua种 ..是字符串连接符号，两边必须有空格
+##Lua种 ..是字符串连接符号，两边必须有*空格*
 
 ##tonumber tostring用于数字和字符类型之间的转换
 
@@ -71,6 +71,6 @@ block comment
 
 ##unpack从Lua5.2开始 变成table.unpack,第二个参数为table的开始index
 
-## coroutine.wrap 会返回所有应该由除第一个（错误代码的那个布尔量） 之外的由 coroutine.resume 返回的值。 和 coroutine.resume 不同， coroutine.wrap 不捕获任何错误； 所有的错误都应该由调用者自己传递。
+##coroutine.wrap 会返回所有应该由除第一个（错误代码的那个布尔量） 之外的由 coroutine.resume 返回的值。 和 coroutine.resume 不同， coroutine.wrap 不捕获任何错误； 所有的错误都应该由调用者自己传递。
 
 
