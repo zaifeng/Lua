@@ -4,7 +4,7 @@ Lua Study for Nginx and OpenResty
 
 ##退出Lua解释器交互模式
 
-os.exit() 或者Ctrl+C
+os.exit() 或者 Ctrl+C/D
 
 ##加载程序块的方式是使用函数dofile
 
@@ -35,7 +35,9 @@ block comment
 
 ##type函数用于返回 类型
 
-##false 和nil 被视为 假
+##false 和nil 被视为 假，空字符串和数字零 都视为 真
+
+##一个全局变量在第一次赋值前的默认值是nil，将nil赋值给一个变量等于删除它
 
 ##Lua种 ..是字符串连接符号，两边必须有*空格*
 
