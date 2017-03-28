@@ -65,4 +65,6 @@ block comment
 
 ##unpack从Lua5.2开始 变成table.unpack,第二个参数为table的开始index
 
+## coroutine.wrap 会返回所有应该由除第一个（错误代码的那个布尔量） 之外的由 coroutine.resume 返回的值。 和 coroutine.resume 不同， coroutine.wrap 不捕获任何错误； 所有的错误都应该由调用者自己传递。
+
 
