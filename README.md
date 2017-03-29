@@ -80,3 +80,9 @@ block comment
 ##尽可能地使用局部变量是一种良好的编程风格
 
 ##Lua不支持switch语句
+
+##所有Lua标准库中的函数都是用C语言写的
+
+##如果函数没有或没有足够多的返回值，那么Lua将用nil补充缺失的值
+
+##function foo(a,b,c) end,调用foo(a,b,c)等价于foo{a,b,c}
