@@ -75,4 +75,8 @@ block comment
 
 ##coroutine.wrap 会返回所有应该由除第一个（错误代码的那个布尔量） 之外的由 coroutine.resume 返回的值。 和 coroutine.resume 不同， coroutine.wrap 不捕获任何错误； 所有的错误都应该由调用者自己传递。
 
+##利用do-end可以显式的声明一个代码块
 
+##尽可能地使用局部变量是一种良好的编程风格
+
+##Lua不支持switch语句
