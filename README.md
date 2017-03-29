@@ -86,3 +86,5 @@ block comment
 ##如果函数没有或没有足够多的返回值，那么Lua将用nil补充缺失的值
 
 ##function foo(a,b,c) end,调用foo(a,b,c)等价于foo{a,b,c}
+
+

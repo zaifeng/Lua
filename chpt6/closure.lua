@@ -7,6 +7,9 @@ function newCounter()
 end
 
 c = newCounter()
+c1 = newCounter()
+print(c())
+print(c())
 
-print(c())
-print(c())
+print(c1())
+print(c1())
