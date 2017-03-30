@@ -27,7 +27,7 @@ block comment
 --]]
 ```
 
-后者便于调试，需要注意的是，** 减号\- ** 和 **中括号\[\[** 之间不能有空格
+后者便于调试，需要注意的是，**减号\-** 和 **中括号\[\[** 之间不能有空格
 
 - Lua中访问一个未初始化的变量不会报错，访问结果是返回一个nil
 
@@ -45,11 +45,11 @@ block comment
 
 - Lua种 ..是字符串连接符号，数字连接，两边必须有 **空格**
 
-- tonumber tostring用于数字和字符类型之间的转换
+- ```tonumber```, ```tostring```用于数字和字符类型之间的转换
 
 - 求长度操作符 \#
 
-- table如果含Hole，则长度以nil元素为结尾，最大索引通过table.maxn获取
+- table如果含Hole(空隙)，则长度以nil元素为结尾，最大索引通过```table.maxn```获取
 
 - table的字符键和数字键 是不重复的，定义table key的时候一定要慎重
 
@@ -57,7 +57,7 @@ block comment
 
 - ```x == x or v``` 等价于 ```if not x then x = v end```
 
-- Lua没有三目表达式，但有替代 例如 max = (x > y) and x or y
+- Lua没有三目表达式，但有替代 例如 ```max = (x > y) and x or y```
 
 - table初始化
 ```
@@ -82,7 +82,7 @@ T={x=1,y=2}
 
 - assert函数检查其第一个参数是否为true，若为true则简单地返回该参数，否则就引发一个错误
 
-- unpack从Lua5.2开始 变成table.unpack,第二个参数为table的开始index
+- unpack从Lua5.2开始 变成```table.unpack```,第二个参数为table的开始index
 
 - ```coroutine.wrap``` 会返回所有应该由除第一个（错误代码的那个布尔量） 之外的由 ```coroutine.resume``` 返回的值。 和 ```coroutine.resume``` 不同， ```coroutine.wrap``` 不捕获任何错误； 所有的错误都应该由调用者自己传递。
 
