@@ -44,3 +44,5 @@ end
 p = producer()
 f = filter(p)
 consumer(f)
+
+-- consumer(filter(producer()))
