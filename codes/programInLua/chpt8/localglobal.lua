@@ -5,3 +5,5 @@ g = function () i = i + 1;print(i) end
 
 f()
 g()
+f()
+g()
