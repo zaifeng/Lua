@@ -1,31 +1,12 @@
 # Lua
 Lua Study for OpenResty
 
-- 退出Lua解释器交互模式
-
-```os.exit()``` 或者 ```Ctrl+C/D```
-
 - 加载程序块的方式是使用函数dofile
 
 该函数会立即执行一个文件
 
 - Lua是有大小写之分的
 
-- 代码注释
-```
--- line comment
-```
-```
---[[
-block comment
-]]
-```
-或者
-```
---[[
-block comment
---]]
-```
 
 后者便于调试，需要注意的是，**减号\-** 和 **中括号\[\[** 之间不能有空格
 
