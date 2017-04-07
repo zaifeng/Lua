@@ -1,5 +1,6 @@
 complex = {}
 
+complex.attr = "complex number"
 function complex.new(r, i)
     return {r=r, i=i}
 end
