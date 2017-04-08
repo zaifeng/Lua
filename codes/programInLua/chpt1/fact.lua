@@ -9,5 +9,6 @@ function fact( n )
 end
 
 print("Enter a number:")
-a = io.read("*number")
+-- a = io.read("*number")
+a = io.read("*n") -- *n same as *number
 print(fact(a))

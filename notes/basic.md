@@ -10,6 +10,25 @@ print("Hello Lua!")
 $lua hello.lua
 Hello Lus
 ```
+### 交互模式
+不输入任何参数运行解释器的时候，进入交互模式
+```
+$ lua
+Lua 5.3.4  Copyright (C) 1994-2017 Lua.org, PUC-Rio
+>
+```
+可通过`-i`指定一个程序块（Lua文件）
+```
+$ lua -i hello.lua
+Lua 5.3.4  Copyright (C) 1994-2017 Lua.org, PUC-Rio
+Hello Lua
+>
+```
+
+以下方式退出交互模式
+- ``os.exit()`` 
+- ``Ctrl + C`` 
+- ``Ctrl + D``
 
 ### 脚本式编程
  同shell
@@ -27,18 +46,6 @@ Hello Lus
 $chmod u+x ./hello.lua
 $./hello.lua
 Hello Lua
-```
- 退出交互模式
-```
-os.exit()
-```
-或者
-```
-Ctrl + C
-```
-或者
-```
-Ctrl + D
 ```
 
 ### 注释
@@ -63,7 +70,9 @@ block comment
 ### 标识符
  标识符命名规则:以一个字母 A 到 Z 或 a 到 z 或下划线 _ 开头后加上0个或多个字母，下划线，数字（0到9）
  
- 其中，字母值跟本地语言环境变量有关
+要注意的地方
+1. 字母值依赖与区域设置（locale），通用一点最好还是用英文，以免在缺少语境的机器上无法运行
+2. 应当避免使用下划线开头后跟一个或多个大写字母的标识符（Lua有特殊用途）
 
 ### 关键词
  一共21个关键词
