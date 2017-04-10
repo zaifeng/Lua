@@ -32,3 +32,11 @@ print(x)
 
 -- Output
 -- 10
+
+-- do end chunk
+
+do
+    local x = 1
+    print(x)
+end
+print(x)
