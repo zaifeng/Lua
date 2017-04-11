@@ -1,7 +1,7 @@
 function foo()
-    local a = 1
-    local b = 2
+    local a,b = 1,2
+    -- local b = 2
     return a,b
 end
 
-print((foo()))
+print(foo())
