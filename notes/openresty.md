@@ -1,7 +1,30 @@
-### OpenResty安装
+## OpenResty安装
+
+
+### 安装准备
 
 ```
-export KERNEL_BITS=64
+$brew install pcre openssl
+```
+
+### 下载OpenResty
+```
+curl -R -O https://openresty.org/download/openresty-1.11.2.2.tar.gz
+tar zxf openresty-1.11.2.2.tar.gz
+cd openresty-1.11.2.2
+```
+
+### 编译
+```
+$export KERNEL_BITS=64
+$./configure --with-cc-opt='-I/usr/local/Cellar/pcre/8.40/include/' \
+       --with-ld-opt='-L/usr/local/Cellar/pcre/8.40/lib' \
+       --with-openssl=/Users/zaifeng/Downloads/Sources/openssl-1.0.2k \
+       --add-module=/Users/zaifeng/Downloads/Sources/openresty-1.11.2.2/bundle/echo-nginx-module-0.60 -j4
+```
+
+实际会转换成如下
+```
 ./configure --prefix=/usr/local/openresty/nginx --with-cc-opt='-O2 -I/usr/local/Cellar/pcre/8.40/include/' 
 --add-module=../ngx_devel_kit-0.3.0 
 --add-module=../echo-nginx-module-0.60 
@@ -24,6 +47,8 @@ export KERNEL_BITS=64
 --with-openssl=/Users/zaifeng/Downloads/Sources/openssl-1.0.2k 
 --with-http_ssl_module
 ```
+
+默认已经添加echo、memcache、redis等模块，如重复添加module会导致make失败
 
 #### make
 
