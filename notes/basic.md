@@ -8,7 +8,7 @@ print("Hello Lua!")
 
 ```
 $lua hello.lua
-Hello Lus
+Hello Lua!
 ```
 ### 交互模式
 不输入任何参数运行解释器的时候，进入交互模式
