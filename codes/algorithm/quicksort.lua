@@ -1,28 +1,32 @@
-function quickSort(...)
-    local list = {...}
-    if #list < 2 then
-        return list
+function quickSort(list , left, right)
+    if left > right then
+        return
     end
 
-    local lit,big = {},{}
-    local rel = list[1]
-    for k = 2,#list do
-        if list[k] >= rel then
-            table.insert(big,list[k])
-        else
-            table.insert(lit,list[k])
+    local i, j = left, right
+    while i ~= j do
+        while list[j] >= list[left] and i < j do
+            j = j - 1
+        end
+
+        while list[i] <= list[left] and i < j do
+            i = i + 1
+        end
+
+        if i < j then
+            list[i],list[j] = list[j],list[i]
         end
     end
-    --print(rel)
-    
-    return {quickSort(lit),rel,quickSort(big)}
+    list[left],list[i] = list[i],list[left]
+    quickSort(list,left,i-1)
+    quickSort(list,i+1,right)
 end
 
-list = {12,20,5,8,3,67,2,4,9,11}
-sorted = quickSort(list)
--- print(sorted)
----[[
-for k, v in pairs(sorted) do
+list = {10,2,9,5,6,12,3}
+sorted = quickSort(list , 1,#list)
+
+for k,v in pairs(list) do
     print(k,v)
 end
---]]
+
+
