@@ -78,6 +78,17 @@ T={x=1,y=2}
 - 如果函数没有或没有足够多的返回值，那么Lua将用nil补充缺失的值
 
 - ```function foo(a,b,c) end```,调用`foo(a,b,c)` 等价于 `foo{a,b,c}`
+- 多返回值问题，如果函数调用不是一系列表达式的最后一个值，那么它将只产生一个值
+
+```
+function foo()
+    return "a","b"    
+end
+
+x,y = foo(),20
+print(x,y)       ------> a 20
+
+```
 
 - Lua 将其所有的全局变量保存在一个常规的`table`中，这个table称为`“环境”`，并将环境table自身保存在一个全局变量_G中
 
