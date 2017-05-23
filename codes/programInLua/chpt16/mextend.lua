@@ -33,6 +33,13 @@ function createClass(...)
         return search(k, parents)
     end})
 
+    --[[
+    setmetatable(c,{__index=function (t,k)
+        local v = search(k, parents)
+        t[k] = v
+        return v
+    end})
+    --]]
     c.__index = c
     function c:new(o)
         o = o or {}
