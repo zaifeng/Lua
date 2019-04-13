@@ -1,7 +1,7 @@
 -- 计算一个数的阶乘
-function fact( n )
+function fact(n)
     -- body
-    if n == 0 then
+    if n == 1 then
         return 1
     else 
         return n*fact(n-1)
@@ -9,6 +9,6 @@ function fact( n )
 end
 
 print("Enter a number:")
--- a = io.read("*number")
-a = io.read("*n") -- *n same as *number
+a = io.read("*number")
+-- a = io.read("*n") -- *n same as *number
 print(fact(a))
