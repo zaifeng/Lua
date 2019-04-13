@@ -1,9 +1,13 @@
-function add( ... )
-    local s = 0
-    for _, v in ipairs{...} do
-        s = s + v
-    end
-    return s
+function select (n, ...)
+
+    return arg[n]
+
 end
 
-print(add({3,4,10,25,12}))
+ 
+
+print(string.find("hello hello", " hel")) --> 6  9
+
+print(select(1, string.find("hello hello", " hel"))) --> 6
+
+print(select(2, string.find("hello hello", " hel"))) --> 9

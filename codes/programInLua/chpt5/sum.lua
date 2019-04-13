@@ -6,6 +6,6 @@ function add( a )
     return sum
 end
 
-t = {1,3,4,5,6,7}
+-- local t = {1,3,4,5,6,7}
 
-print(add(t))
+print(add({1,3,4,5,6,7}))
